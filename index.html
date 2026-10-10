@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QuantPulse — AI-powered algorithmic trading technology, broker connectivity, strategy analytics and risk tools.">
+  <meta name="theme-color" content="#07101b">
+  <title>QuantPulse | AI Trading Technology</title>
+  <style>
+    :root{--bg:#050b14;--panel:#0b1625;--panel2:#0d1d30;--text:#f4f8ff;--muted:#a6b5c8;--cyan:#23d8ef;--green:#39f5a1;--blue:#438cff;--purple:#c46aff;--line:rgba(150,190,220,.17)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 80% 0%,#0c2b39 0,transparent 34%),radial-gradient(ellipse at 0% 40%,#071b37 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:1.35rem;font-weight:850;letter-spacing:-.04em}.logo{width:42px;height:42px;border-radius:13px;border:1px solid #1a8caa;background:linear-gradient(145deg,#09274a,#071326);display:grid;place-items:center;box-shadow:0 0 24px #00d9f033;color:var(--green);font-size:25px}.brand span span{color:var(--cyan)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:12px 19px;border-radius:12px;font-weight:750;border:1px solid #25d9e8;background:linear-gradient(110deg,#14c9df,#2b9bff);color:#03111c;box-shadow:0 8px 32px #00d5e51c;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:78px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #1e8e8c;border-radius:999px;color:#9fffe1;background:#0b302d70;font-size:.82rem;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}h1{font-size:clamp(2.65rem,5vw,4.8rem);line-height:1.04;letter-spacing:-.065em;margin:22px 0}h1 em{font-style:normal;background:linear-gradient(90deg,var(--green),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.12rem;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.micro{color:#8295ab;font-size:.82rem}
+    .visual{position:relative;border:1px solid #24556a;border-radius:25px;padding:20px;background:linear-gradient(145deg,#0d2033eF,#06101df2);box-shadow:0 24px 90px #00c8e51a;overflow:hidden}.visual:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#00e0b51c;filter:blur(45px);right:-50px;top:-70px}.dashhead{display:flex;justify-content:space-between;align-items:center;position:relative}.pill{font-size:.75rem;color:#9effd8;border:1px solid #236a5a;padding:4px 9px;border-radius:999px}.chart{height:180px;width:100%;margin:15px 0;position:relative}.chart svg{width:100%;height:100%}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{padding:12px;background:#0a1a2a;border:1px solid var(--line);border-radius:12px}.metric small{display:block;color:var(--muted);font-size:.72rem}.metric strong{font-size:1.08rem}.up{color:var(--green)}
+    section{padding:62px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 32px}.section-head h2{font-size:clamp(1.9rem,3.2vw,3rem);letter-spacing:-.045em;line-height:1.12;margin:10px 0}.section-head p{color:var(--muted)}.kicker{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature,.plan,.step{background:linear-gradient(145deg,#0d1b2b,#07111d);border:1px solid var(--line);border-radius:18px;padding:22px}.icon{width:43px;height:43px;border-radius:12px;display:grid;place-items:center;background:#0d3844;color:var(--cyan);font-size:1.3rem;border:1px solid #1b6471}.feature h3{margin:15px 0 5px}.feature p,.plan p,.step p{color:var(--muted);font-size:.93rem;margin-bottom:0}
+    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}.plan{position:relative;display:flex;flex-direction:column}.plan.highlight{border-color:#1ebfd3;box-shadow:0 0 38px #00cfe414}.plan .tag{font-size:.75rem;color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:.1em}.plan h3{font-size:1.35rem;margin:12px 0 4px}.price{font-size:2.25rem;font-weight:900;letter-spacing:-.05em;margin:12px 0 0}.price small{font-size:.84rem;letter-spacing:0;color:var(--muted);font-weight:500}.plan ul{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:10px;color:#d5e1ee;font-size:.91rem}.plan li:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}.plan .btn{margin-top:auto;width:100%}.note{color:#8da0b4;font-size:.78rem;margin-top:14px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.num{font-size:.8rem;color:var(--cyan);font-weight:900;letter-spacing:.1em}.step h3{margin:8px 0}.cta{border:1px solid #1a6576;border-radius:24px;padding:38px;background:radial-gradient(ellipse at 100% 0%,#0a5961 0,transparent 42%),linear-gradient(120deg,#0b1e32,#07111e);display:flex;justify-content:space-between;gap:25px;align-items:center}.cta h2{font-size:clamp(1.8rem,3.4vw,2.8rem);letter-spacing:-.04em;line-height:1.1;margin:0 0 10px}.cta p{color:var(--muted);margin:0;max-width:640px}.footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#90a1b4;font-size:.82rem}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.disclaimer{max-width:900px;margin-top:16px;font-size:.75rem}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding:55px 0}.visual{max-width:650px;width:100%;margin:auto}.features,.plans{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.navlinks a:not(.nav-cta){display:none}}
+    @media(max-width:480px){.steps{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.metric{display:flex;justify-content:space-between;align-items:center}.nav .btn{padding:9px 12px;font-size:.82rem}.hero{padding-top:42px}section{padding:45px 0}.visual{padding:14px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#" aria-label="QuantPulse home"><span class="logo">↗</span><span>Quant<span>Pulse</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#features">Technology</a><a href="#plans">Plans</a><a href="#how">How it works</a>
+    </nav>
+    <a class="btn nav-cta" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener">Contact us ↗</a>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> AI-POWERED ALGORITHMIC TRADING</div>
+        <h1>Trade with a plan.<br><em>Powered by data.</em></h1>
+        <p class="lead">Explore algorithmic trading technology built around strategy automation, market analytics, broker connectivity and risk-aware workflows.</p>
+        <div class="actions"><a class="btn" href="#plans">Explore plans <span>→</span></a><a class="btn secondary" href="#features">Discover QuantPulse</a></div>
+        <p class="micro">Strategy tools for informed users. Trading involves risk; outcomes are never guaranteed.</p>
+      </div>
+      <div class="visual" aria-label="Illustrative QuantPulse trading dashboard">
+        <div class="dashhead"><strong>⚡ QuantPulse Terminal</strong><span class="pill">● SYSTEM OVERVIEW</span></div>
+        <div class="chart">
+          <svg viewBox="0 0 560 190" role="img" aria-label="Illustrative upward and downward market chart">
+            <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26e8b0" stop-opacity=".35"/><stop offset="1" stop-color="#26e8b0" stop-opacity="0"/></linearGradient></defs>
+            <g stroke="#294158" stroke-width="1" opacity=".65"><path d="M0 30H560M0 70H560M0 110H560M0 150H560"/><path d="M70 0V190M150 0V190M230 0V190M310 0V190M390 0V190M470 0V190"/></g>
+            <path d="M0 148 L38 128 L65 140 L96 91 L124 110 L154 76 L183 97 L211 61 L244 87 L270 49 L300 72 L330 35 L357 58 L386 28 L417 53 L446 23 L480 42 L510 15 L560 26 L560 190 L0 190Z" fill="url(#fill)"/>
+            <path d="M0 148 L38 128 L65 140 L96 91 L124 110 L154 76 L183 97 L211 61 L244 87 L270 49 L300 72 L330 35 L357 58 L386 28 L417 53 L446 23 L480 42 L510 15 L560 26" fill="none" stroke="#35f0b0" stroke-width="3" stroke-linejoin="round"/>
+            <g stroke-width="2"><path d="M86 105V147M78 117H94M78 134H94" stroke="#31e5a4"/><path d="M175 79V126M167 90H183M167 111H183" stroke="#31e5a4"/><path d="M265 54V98M257 64H273M257 83H273" stroke="#31e5a4"/><path d="M351 38V83M343 48H359M343 68H359" stroke="#31e5a4"/><path d="M437 25V67M429 35H445M429 52H445" stroke="#31e5a4"/></g>
+          </svg>
+        </div>
+        <div class="metrics"><div class="metric"><small>Market analytics</small><strong>Live-ready*</strong></div><div class="metric"><small>Strategy testing</small><strong>Backtesting</strong></div><div class="metric"><small>Risk workflow</small><strong class="up">Risk-aware</strong></div></div>
+        <p class="micro">*Availability depends on your configured data and broker integrations. Illustration only.</p>
+      </div>
+    </div>
+
+    <section id="features"><div class="wrap">
+      <div class="section-head"><div class="kicker">The QuantPulse toolkit</div><h2>More structure in your trading workflow</h2><p>Bring analysis, strategy evaluation and monitoring into a clearer process.</p></div>
+      <div class="features">
+        <article class="feature"><div class="icon">⌁</div><h3>Market analytics</h3><p>Review price action, indicators and market context in one workflow, based on your configured data source.</p></article>
+        <article class="feature"><div class="icon">AI</div><h3>AI-assisted signals</h3><p>Explore model-assisted analysis and strategy ideas. Signals are informational, not a promise of results.</p></article>
+        <article class="feature"><div class="icon">▥</div><h3>Strategy backtesting</h3><p>Evaluate historical strategy behaviour before considering live deployment.</p></article>
+        <article class="feature"><div class="icon">↔</div><h3>Broker connectivity</h3><p>Connect supported broker accounts where integrations, permissions and APIs are available.</p></article>
+        <article class="feature"><div class="icon">◇</div><h3>Risk controls</h3><p>Build risk checks into the workflow, including exposure monitoring and configured limits.</p></article>
+        <article class="feature"><div class="icon">▤</div><h3>Reporting & monitoring</h3><p>Track strategy activity and review reports to support better-informed decisions.</p></article>
+      </div>
+    </div></section>
+
+    <section id="plans"><div class="wrap">
+      <div class="section-head"><div class="kicker">Choose your setup</div><h2>Three ways to use QuantPulse</h2><p>Compare the current packages and confirm scope, compatibility and terms before purchase.</p></div>
+      <div class="plans">
+        <article class="plan"><div class="tag">Plan 01 · Personal access</div><h3>Connect your broker</h3><p>Use QuantPulse with a supported broker account and configured strategies.</p><div class="price">₹7,999 <small>/ package</small></div><ul><li>Supported broker integration</li><li>Strategy setup guidance</li><li>Automation and monitoring features as agreed</li><li>Risk controls subject to configuration</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener">Ask about Plan 1 ↗</a><div class="note">Confirm supported brokers, access duration and included support before buying.</div></article>
+        <article class="plan highlight"><div class="tag">Plan 02 · Performance-based</div><h3>Algo trading service</h3><p>A service arrangement for supported assets, with the fee tied to eligible profits as defined in writing.</p><div class="price">5% <small>profit share*</small></div><ul><li>Algorithmic strategy service</li><li>Supported asset coverage confirmed in advance</li><li>Activity and performance reporting</li><li>Written fee and loss-handling terms</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener">Discuss the service ↗</a><div class="note">*Define eligible profits, loss carry-forward, fees, custody and authorization before engagement.</div></article>
+        <article class="plan"><div class="tag">Plan 03 · Complete setup</div><h3>Own the project setup</h3><p>A project package for buyers who want to deploy and customize their own algo-trading technology.</p><div class="price">₹28,999 <small>/ package</small></div><ul><li>Project setup and documentation as agreed</li><li>Source code only if included in the contract</li><li>Multi-account features subject to package scope</li><li>Broker integration and deployment guidance as agreed</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener">Ask about Plan 3 ↗</a><div class="note">Confirm source-code ownership, supported accounts and update/support terms in writing.</div></article>
+      </div>
+    </div></section>
+
+    <section id="how"><div class="wrap">
+      <div class="section-head"><div class="kicker">A considered workflow</div><h2>From idea to evaluation</h2><p>Automation should start with testing, clear permissions and defined risk limits.</p></div>
+      <div class="steps">
+        <article class="step"><div class="num">STEP 01</div><h3>Define the strategy</h3><p>Choose the market, rules, timeframe and risk parameters.</p></article>
+        <article class="step"><div class="num">STEP 02</div><h3>Test the logic</h3><p>Backtest using suitable historical data and account for costs and slippage.</p></article>
+        <article class="step"><div class="num">STEP 03</div><h3>Configure access</h3><p>Review broker compatibility, API permissions and paper-trading options.</p></article>
+        <article class="step"><div class="num">STEP 04</div><h3>Monitor continuously</h3><p>Track positions, system status and risk limits; intervene when needed.</p></article>
+      </div>
+    </div></section>
+
+    <section><div class="wrap"><div class="cta"><div><div class="kicker">Start a conversation</div><h2>Build a more systematic trading workflow.</h2><p>Tell us which QuantPulse package you are interested in and ask about broker compatibility, features, pricing and setup requirements.</p></div><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener">Message QuantPulse ↗</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footerrow"><a class="brand" href="#"><span class="logo">↗</span><span>Quant<span>Pulse</span></span></a><span>AI-powered trading technology · Independent project</span><span>© <span id="year"></span> QuantPulse</span></div><p class="disclaimer">Risk disclosure: Algorithmic trading and securities-market activity involve risk, including the possible loss of capital. Past performance does not guarantee future results. This website is informational and does not constitute investment advice or a promise of returns. Confirm applicable laws, regulatory requirements, broker terms, product scope and all commercial agreements before offering or using any trading service.</p></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
